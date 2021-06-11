@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/citiesFrameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CitiesFragment" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/citiesConstraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivCameraIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="96dp"
+            android:layout_marginEnd="29dp"
+            android:layout_marginBottom="97dp"
+            android:src="@android:drawable/ic_menu_camera"
+            app:layout_constraintBottom_toTopOf="@+id/etCityName"
+            app:layout_constraintEnd_toStartOf="@+id/ivPicture"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/addCityInformationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:layout_marginBottom="122dp"
+            android:text="Add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/cancelCityInformationButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="76dp"
+            android:layout_marginBottom="122dp"
+            android:text="Cancel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivLocationIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="23dp"
+            android:layout_marginBottom="28dp"
+            android:src="@android:drawable/ic_menu_mylocation"
+            app:layout_constraintBottom_toTopOf="@+id/addCityInformationButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etCityTouristSpots" />
+
+        <EditText
+            android:id="@+id/etCityTouristSpots"
+            android:layout_width="259dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="76dp"
+            android:ems="10"
+            android:hint="Enter Tourist Spots"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etCityBestTimeToVisit" />
+
+        <EditText
+            android:id="@+id/etCityBestTimeToVisit"
+            android:layout_width="259dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginEnd="76dp"
+            android:layout_marginBottom="35dp"
+            android:ems="10"
+            android:hint="Enter Best Time to Visit"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/etCityTouristSpots"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/etCityName"
+            android:layout_width="259dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:layout_marginEnd="76dp"
+            android:layout_marginBottom="35dp"
+            android:ems="10"
+            android:hint="Enter City Name"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/etCityBestTimeToVisit"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivPicture"
+            android:layout_width="170dp"
+            android:layout_height="133dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="76dp"
+            android:layout_marginBottom="56dp"
+            app:layout_constraintBottom_toTopOf="@+id/etCityName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etCityLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="76dp"
+            android:layout_marginBottom="18dp"
+            android:ems="10"
+            android:hint="City, State"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/addCityInformationButton"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

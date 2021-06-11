@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/CustomAlerts"
+    android:background="@color/finalLighterDark"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Enter Review Information"
+        android:textAlignment="center"
+        android:textColor="@color/finalLightGray"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:background="@color/finalLightGray"
+        tools:layout_gravity="center_horizontal">
+
+        <Spinner
+            android:id="@+id/categorySpinner"
+            android:layout_width="210dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/finalDark"
+            android:theme="@style/spinnerCustom" />
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/etReviewItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+
+        android:ems="10"
+        android:hint="Enter Review Name"
+        android:inputType="textPersonName"
+        android:backgroundTint="@color/finalYellow"
+        android:textColor="@color/genericWhite"
+        android:textColorHint="#838383" />
+
+    <EditText
+        android:id="@+id/etReviewItemCuisine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/finalYellow"
+        android:ems="10"
+        android:hint="Enter Website"
+        android:inputType="textPersonName"
+        android:textColor="@color/genericWhite"
+        android:textColorHint="#838383" />
+
+    <EditText
+        android:id="@+id/etReviewItemDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/finalYellow"
+        android:ems="10"
+        android:hint="Enter Details"
+        android:inputType="textPersonName"
+        android:textColor="@color/genericWhite"
+        android:textColorHint="#838383" />
+
+    <EditText
+        android:id="@+id/etReviewItemLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/finalYellow"
+        android:ems="10"
+        android:hint="Enter Location"
+        android:inputType="textPersonName"
+        android:textColor="@color/genericWhite"
+        android:textColorHint="#838383" />
+
+    <EditText
+        android:id="@+id/etReviewItemFamous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/finalYellow"
+        android:ems="10"
+        android:hint="Enter Feature"
+        android:inputType="textPersonName"
+        android:textColor="@color/genericWhite"
+        android:textColorHint="#838383" />
+
+</LinearLayout>

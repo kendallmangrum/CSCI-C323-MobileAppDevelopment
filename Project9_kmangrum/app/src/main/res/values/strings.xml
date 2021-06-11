@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Project9_kmangrum</string>
+
+    <string-array name="category_array">
+        <item>Grocery</item>
+        <item>Gas</item>
+        <item>Shopping</item>
+        <item>Miscellaneous</item>
+    </string-array>
+</resources>
